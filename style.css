@@ -7,6 +7,40 @@
     --text-black-900:#302e4d;
     --text-black-700: #504e70;
 }
+
+
+
+/* Default theme */
+:root {
+    --skin-color: #fa5b0f;
+}
+
+/* Theme 1 */
+.theme-1 {
+    --skin-color: #fa5b0f;
+}
+
+/* Theme 2 */
+.theme-2 {
+    --skin-color: #37b182;
+}
+
+/* Theme 3 */
+.theme-3 {
+    --skin-color: #1854b4;
+}
+
+/* Theme 4 */
+.theme-4 {
+    --skin-color:#f021b2;
+}
+
+/* Theme 5 */
+.theme-5 {
+    --skin-color: #ec1839;
+}
+
+
 body.dark
 {
     --bg-black-900:#151515;

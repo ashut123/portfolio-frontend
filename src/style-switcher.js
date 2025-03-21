@@ -11,18 +11,30 @@ window.addEventListener("scroll",() =>{
     }
 })
 /*====theme colors===== */
-const alternateStyles = document.querySelectorAll(".alternate-style");
-function setActiveStyle(color){
-    alternateStyles.forEach((style)=>{
-        if(color === style.getAttribute("title"))
-        {
-            style.removeAttribute("disabled");
-        }
-        else{
-            style.setAttribute("disabled","true");
-        }
-    })
+
+function switchTheme(theme) {
+    const body = document.body;
+    
+    // Remove all theme-related classes
+    body.classList.remove('theme-1', 'theme-2', 'theme-3','theme-4','theme-5');
+    
+    // Add the selected theme class
+    body.classList.add(theme);
 }
+
+// const alternateStyles = document.querySelectorAll(".alternate-style");
+// function setActiveStyle(color){
+//     console.log("color", color);
+//     alternateStyles.forEach((style)=>{
+//         if(color === style.title)
+//         {
+//             style.removeAttribute("disabled");
+//         }
+//         else{
+//             style.setAttribute("disabled","true");
+//         }
+//     })
+// }
 /*====theme light and dark mode===== */
 const dayNight = document.querySelector(".day-night");
 console.log("dayNight", dayNight)
@@ -39,3 +51,6 @@ window.addEventListener("load",() => {
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
+
+
+window.switchTheme = switchTheme;
