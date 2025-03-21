@@ -85,6 +85,7 @@ function asideSectionTogglerBtn() {
 
 
 function sendMessage() {
+    console.log("Message sent!");
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const subject = document.getElementById("subject").value.trim();
@@ -136,3 +137,6 @@ function validateEmail(email) {
 }
 
 
+
+
+window.sendMessage = sendMessage;
